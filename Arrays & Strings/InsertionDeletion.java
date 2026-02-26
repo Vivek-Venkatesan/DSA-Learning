@@ -128,7 +128,7 @@ public class InsertionDeletion {
     Input = [1,2,3,4,5] Target = 12
     Expected - true (2+3+7 = 12)
     */
-    public static boolean hasSubarraySum(int[] arr, int target) {
+    public boolean hasSubarraySum(int[] arr, int target) {
         int n = arr.length;
 
         for (int start = 0; start < n; start++) {
@@ -145,5 +145,28 @@ public class InsertionDeletion {
     Much Like two sum of two different numbers similar approach applies here where
     loop handles iterating through sub arrays and the sum acts as ultimate value possessor to which we can compare the target
     */
+
+    /*
+    Array = [3, -1, 4]
+    List all subarrays and their sums.
+    */
+
+    public void printAndSumSubArrays(int[] arr) {
+        int n = arr.length;
+        int total = 0;
+        for(int start = 0; start < n; start++) {
+            int sum = 0;
+            for(int end = start; end < n; end++) {
+                sum += arr[end];
+                total += sum;
+                //printing subarrays
+                for(int k = start; k <= end; k++) {
+                    System.out.println(arr[k] + " ");
+                }
+            }
+            System.out.println();
+        }
+        System.out.println("Total sum of all subarrays: " + total);
+    }
 
 }

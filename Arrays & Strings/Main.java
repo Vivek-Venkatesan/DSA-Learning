@@ -20,5 +20,6 @@ public class Main {
         arrayInserts.maxSum(arr, value);
         arrayInserts.printSubarrays(arr);
         arrayInserts.maxSubarray(arr);
+        arrayInserts.hasSubarraySum(arr, value);
     }
 }

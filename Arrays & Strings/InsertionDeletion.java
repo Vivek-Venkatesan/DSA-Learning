@@ -33,6 +33,11 @@ public class InsertionDeletion {
         }
 
         return false;
+        /*
+        This works better with Time complexity O(n) and Space complexity O(1)
+        If the sum is too small it increase left pointer
+        If the sum is too large this decreases the right pointer
+        */
     }
 
 }

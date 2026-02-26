@@ -17,5 +17,8 @@ public class Main {
         arrayInserts.insert(arr, size, index, value);
         arrayInserts.delete(arr, size, index);
         arrayInserts.hasPair(arr, value);
+        arrayInserts.maxSum(arr, value);
+        arrayInserts.printSubarrays(arr);
+        arrayInserts.maxSubarray(arr);
     }
 }

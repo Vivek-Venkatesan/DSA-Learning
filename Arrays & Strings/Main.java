@@ -5,6 +5,7 @@ public class Main {
          int[] arr = {1, 2, 3, 4, 5};
         Basics arrayBasics = new Basics();
         InsertionDeletion arrayInserts = new InsertionDeletion();
+        SubArrays subArrays = new SubArrays();
         arrayBasics.sumOfAllElements(arr);
         arrayBasics.indexBasedTraversal(arr);
         arrayBasics.enhancedForLoop(arr);
@@ -17,9 +18,9 @@ public class Main {
         arrayInserts.insert(arr, size, index, value);
         arrayInserts.delete(arr, size, index);
         arrayInserts.hasPair(arr, value);
-        arrayInserts.maxSum(arr, value);
-        arrayInserts.printSubarrays(arr);
-        arrayInserts.maxSubarray(arr);
-        arrayInserts.hasSubarraySum(arr, value);
+        subArrays.maxSum(arr, value);
+        subArrays.printSubarrays(arr);
+        subArrays.maxSubarray(arr);
+        subArrays.hasSubarraySum(arr, value);
     }
 }

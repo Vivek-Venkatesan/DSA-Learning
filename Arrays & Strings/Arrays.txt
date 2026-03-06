@@ -1,0 +1,10 @@
+Arrays are the type of Data structure where it is used to store very common data types collections be it Primitive or Object
+Arrays basically only allows you to store similar data types into one single Array. Array size needs to fixed during its creation. Like it needs to be predefined
+
+Sample declaration
+int[] rollno = new int[50]
+Arrays initialation basically gets memory allocation in stack after Object assiging its gets memory in the Heap memory
+Arrays Initialization happens in compile time in Stack memory
+Arrays Object memory allocation in Run time in Heap memory
+
+Arrays are continous memory block alocation in C and C++ but its completely upto JVM to decide on that in Java
